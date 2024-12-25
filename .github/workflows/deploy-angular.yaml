@@ -29,4 +29,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages          # The branch that will serve your site on GitHub Pages
-          folder: dist/sort-app  # The folder from your "ng build" outputPath
+          folder: dist/sort-app/browser  # The folder from your "ng build" outputPath
