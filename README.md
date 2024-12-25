@@ -1,59 +1,95 @@
-# SortApp
+# Sorting Algorithms Comparison
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+This project is an Angular application that demonstrates and compares the performance of three different sorting algorithms: Bubble Sort, Merge Sort, and Quick Sort. The application generates a random array of numbers and sorts them using each algorithm, displaying the sorted arrays and the time taken by each algorithm.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Generate a random array of numbers
+- Sort the array using Bubble Sort, Merge Sort, and Quick Sort
+- Display the sorted arrays
+- Display the time taken by each sorting algorithm
 
-```bash
-ng serve
+## Sorting Algorithms
+
+This project uses three different sorting algorithms to demonstrate and compare their performance:
+
+1. **Bubble Sort:**
+   - Bubble Sort is a simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+   - Time Complexity: O(n^2)
+
+2. **Merge Sort:**
+   - Merge Sort is a divide-and-conquer algorithm. It divides the input array into two halves, recursively sorts each half, and then merges the two sorted halves to produce the sorted array.
+   - Time Complexity: O(n log n)
+
+3. **Quick Sort:**
+   - Quick Sort is another divide-and-conquer algorithm. It picks an element as a pivot and partitions the array around the pivot, such that elements less than the pivot are on the left and elements greater than the pivot are on the right. It then recursively sorts the sub-arrays.
+   - Time Complexity: O(n log n) on average, O(n^2) in the worst case
+
+These algorithms are implemented in the application to sort a randomly generated array of numbers and compare their performance in terms of time taken to sort the array.
+
+## Project Structure
+
+```
+src/
+  app/
+    app.component.html
+    app.component.scss
+    app.component.spec.ts
+    app.component.ts
+    app.config.ts
+    app.routes.ts
+  index.html
+  main.ts
+  styles.scss
+angular.json
+package.json
+README.md
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Running the Project Locally
 
-## Code scaffolding
+To run this project locally, follow these steps:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. **Clone the repository:**
 
-```bash
-ng generate component component-name
-```
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. **Install dependencies:**
 
-```bash
-ng generate --help
-```
+   ```sh
+   npm install
+   ```
 
-## Building
+3. **Run the development server:**
 
-To build the project run:
+   ```sh
+   ng serve
+   ```
 
-```bash
-ng build
-```
+4. **Open the application in your browser:**
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   Navigate to `http://localhost:4200` in your web browser to see the application in action.
 
-## Running unit tests
+## Usage
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. **Generate Random Data:**
 
-```bash
-ng test
-```
+   Click the "Generate Random Data" button to create a new random array of numbers.
 
-## Running end-to-end tests
+2. **Compare Sorting:**
 
-For end-to-end (e2e) testing, run:
+   Click the "Compare Sorting" button to sort the array using Bubble Sort, Merge Sort, and Quick Sort. The sorted arrays and the time taken by each algorithm will be displayed.
 
-```bash
-ng e2e
-```
+## License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Feel free to modify and enhance the project as needed. Happy coding!
